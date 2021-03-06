@@ -29,22 +29,22 @@
           {% comment %} <li class="nav-item ">
             <a class="nav-link {% block homeactive %}{% endblock homeactive %}" href="/">Home</a>
           </li> {% endcomment %}
-          <li class="nav-item ">
+          <li class="nav-item " style="position:absolute; right:725px; top:10px;">
             <a class="nav-link {% block aboutactive %}{% endblock aboutactive %}" href="/about">About us</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link {% block blogactive %}{% endblock blogactive %}" href="/workout">Workout</a>
+          <li class="nav-item " style="position:absolute; right:850px; top:10px;">
+            <a class="nav-link {% block workoutactive %}{% endblock workoutactive %}" href="/workout">Workout</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item " style="position:absolute; right:600px; top:10px;">
             <a class="nav-link {% block contactactive %}{% endblock contactactive %}" href="/contact">Contact us</a>
           </li>
 
         </ul>
         
-        <form class="d-flex">
+        {% comment %} <form class="d-flex">
           <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success mx-2" type="submit">Search</button>
-        </form>
+        </form> {% endcomment %}
 
       {% if user.is_authenticated %}
 
