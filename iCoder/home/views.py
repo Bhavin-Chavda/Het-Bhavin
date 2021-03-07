@@ -34,6 +34,23 @@ def about(request):
 def workout(request):
     return render(request,'home/workout.html')    
 
+def endurance(request):
+    return render(request,'home/endurance.html')     
+
+def strength_training(request):
+    return render(request,'home/strength_training.html')     
+
+def cross_training(request):
+    return render(request,'home/cross_training.html')     
+
+def hitt(request):
+    return render(request,'home/hitt.html')     
+
+def core_strength(request):
+    return render(request,'home/core_strength.html')     
+
+def resistance(request):
+    return render(request,'home/resistance.html')     
 
 def handlesignup(request):
     if request.method=="POST":
