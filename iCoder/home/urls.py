@@ -18,4 +18,6 @@ urlpatterns = [
     path('hitt',views.hitt,name='hitt'),
     path('core_strength',views.core_strength,name='core_strength'),
     path('resistance',views.resistance,name='resistance'),
+    path('BMI',views.BMI, name='BMI'),
+    path('add',views.add, name='add'),
 ]

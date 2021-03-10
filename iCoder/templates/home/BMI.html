@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block head %}
+<style>
+body {
+  background-image: url('/static/img/a1.jpg');
+  background-size: cover;
+}
+</style>
+
+{% endblock head %}
+{% block BMIactive %} active {% endblock BMIactive %}
+{% block title %}BMI{% endblock title %}
+
+{% block body %}
+    <h1>This is Page for Calculate body mass index</h1><br><br>
+    
+
+<form action="add">
+Enter Your Height(cm)  : <input type="text" name="height"><br><br>
+Enter Your Weight(kg) : <input type="text" name="weight"><br><br>
+<input type="submit" >
+</form>
+<!-- editing  -->
+{% endblock body%}
