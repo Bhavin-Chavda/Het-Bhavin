@@ -24,7 +24,7 @@ def contact(request):
         else:
             contact=Contact(name=name,email=email,phone=phone,content=content)
             contact.save()
-            messages.success(request,"Your message has been sent successfully")
+            messages.success(request,"Your message has been received successfully, we'll try to reach you soon")
     return render(request,'home/contact.html')
 
 def about(request):
@@ -86,7 +86,7 @@ def handlesignup(request):
         myuser.last_name=lname
         # myuser.passc=pass2
         myuser.save()
-        messages.success(request,'Your iCoder Account has been successfully created')
+        messages.success(request,'Your Fitness Account has been successfully created')
         return redirect('home')
     else:
         return HttpResponse('404 - Not Found')    
@@ -105,7 +105,7 @@ def handlelogin(request):
             messages.success(request,loginusername+', You are successfully logged in')
             return redirect('home')
         else:  
-            messages.error(request,"Invalid credentials, please try again later ")
+            messages.error(request,"Invalid credentials, please try again ")
             return redirect('home')  
     else:
         return HttpResponse('404 - Not Found')
