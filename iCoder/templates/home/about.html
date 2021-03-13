@@ -1,4 +1,42 @@
 {% extends 'base.html' %}
+{% block head %}
+<style>
+body {
+  /* background-image: url('/static/img/a4.jpg'); */
+  background-color: rgb(2, 2, 44);
+}
+</style>
+
+{% endblock head %}
 {% block title %}About{% endblock title %}
 {% block aboutactive %}active{% endblock aboutactive %}
-{% block body %}This is About page {% endblock body %}
+{% block body %}
+
+<h1 style="text-align:center; color:white">About Us</h1><hr style="border: 1px solid rgb(208, 235, 33);">
+
+<h2 style="text-align:center; color:white">Our Core Values</h2>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">Customers are our priority. We are passionate about delivering exceptional, personalised customer service to all.</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">We believe open, direct and supportive communication is the foundation of any successful organisation.</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">We are committed to common goals. Effective communication and accountability makes our team achieve greater results.</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">Invented by our CEO's, Nimbagility reflects the ability to remain nimble and agile through lean, efficient actions.</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">We believe that we should all take ownership and have the courage to lead change.</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">Our culture of creative innovation in people, processes and products bring ideas into reality.</h5>
+
+<hr style="border: 1px solid rgb(208, 235, 33);">
+
+<h2 style="padding:20px; color:rgb(255, 255, 255)">What we do</h2>
+<p style="color:rgb(209, 129, 127); padding: 20px; width: 80%; font-size: large;">
+    We want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable equipment for your home gym, studio or commercial gym, keeping your budget, lifestyle and fitness goals in mind. We stock a wide range of gym equipment, with strength equipment, cardio, cross training and so much more. Our awesome team is always keen to help, so please call us to discuss your needs.
+</p>   
+
+<h2 style="padding:20px; color:rgb(255, 255, 255)">Customer Service</h2>
+<p style="color:rgb(209, 129, 127); padding: 20px; width: 80%; font-size: large;">
+    At Gym and Fitness, customers are at the centre of what we do and why we do it! We have a team of knowledgeable sales representatives who are ready to assist you with your gym equipment needs. Our crew will be able to answer your questions from honest product information to the best way to integrate a piece of equipment into your workout routine. We work hard to ensure we have strong relationships with our suppliers, bringing you the best possible prices in the industry. In fact, if you find a better price on one of our core range of products, we will match it as a part of our brand promises.
+</p> 
+
+<h2 style="padding:20px; color:rgb(255, 255, 255)">Culture</h2>
+<p style="color:rgb(209, 129, 127); padding: 20px; width: 80%; font-size: large;">
+    At Gym and Fitness, we believe that building a positive culture is incredibly important. The business is underpinned by six core values which speak of our commitment to our customers, staff, the industry and our business as a whole. We believe in encouraging, supporting, challenging, learning and growing to be the best. At Gym and Fitness, every morsel of feedback is a nugget of shiny gold because it gives us the opportunity to provide the best customer experience
+</p>
+
+{% endblock body %}

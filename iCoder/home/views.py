@@ -120,3 +120,15 @@ def handlelogout(request):
     return redirect('home')
 
     # return HttpResponse('Logouttttttttttt')    
+
+
+def BMI(request):
+    return render(request,'home/BMI.html')
+
+def add(request):
+    ht=float(request.GET['height'])
+    wt=float(request.GET['weight'])
+
+    res=round((wt/(ht*ht))*10000,2)
+
+    return render(request,'home/BMIANS.html',{'result':res})     
