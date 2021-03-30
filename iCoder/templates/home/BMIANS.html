@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+<style>
+body {
+  background-image: url('/static/img/bmipage.jpg');
+  background-size:cover;
+}
+</style>
+
+{% endblock head %}
+{% block body %}<br><br>
+<img src="/static/img/b06.png" alt="Snow" style="width:30%; margin:60px;">
+<h1 style="margin:20px;">Your Body Mass Index is <strong>{{result}}</strong></h1>
+<!-- editing -->
+{% endblock body%}

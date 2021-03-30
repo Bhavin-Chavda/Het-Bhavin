@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block head %}
+<style>
+body {
+  background-image: url('/static/img/18.jpg');
+  background-size: cover;
+}
+</style>
+
+{% endblock head %}
+{% block title %}Contact{% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+{% block body %}
+
+{% comment %} <h2 class="container my-3" style="color:white">About Us</h2><br> {% endcomment %}
+
+
+
+
+
+<div class="container my-3">
+<form method="POST" action="/contact">
+{% csrf_token %}
+<h2 style="text-align:center; color:white">Contact Us</h2>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">Please drop us a line, we'd love to hear from you !</h5>
+<h5 style="text-align:center; color:rgb(144, 142, 142)">We'll  get back to you as soon as we can.</h4><br>
+<div class="mb-3">
+    <label for="name" class="form-label" style="color: white;"><h5>Name :</h5></label><br>
+    <input type="text" id="name" name="name" style="width:40%; border-radius:5px; border-color: rgb(241, 181, 102); background-color: rgba(68, 56, 56, 0.8); color: #5fba3d;">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label" style="color: white;"><h5>Email address :</h5></label><br>
+    <input type="email" id="email" name="email" style="width:40%; border-radius:5px; border-color: rgb(241, 181, 102); background-color: rgba(68, 56, 56, 0.8); color: #5fba3d;">
+    
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label" style="color: white;"><h5>Phone Number :</h5></label><br>
+    <input type="phone" name="phone" id="phone" style="width:40%; border-radius:5px; border-color: rgb(241, 181, 102); background-color: rgba(68, 56, 56, 0.8); color: #5fba3d;">
+  </div>
+  <div class="mb-3">
+    <label for="content" class="form-label" style="color: white;"><h5>How may we help you??</h5></label><br>
+    <textarea name="content" id="content" cols="30" rows="5" style="width:40%; border-radius:5px; border-color: rgb(241, 181, 102); background-color: rgba(68, 56, 56, 0.8); color: #5fba3d;"></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" style="background-color: rgb(241, 181, 102); border-color: rgb(241, 181, 102); border-color: black; color: black; ">Submit</button>
+</form>
+</div> 
+
+
+{% endblock body %}
